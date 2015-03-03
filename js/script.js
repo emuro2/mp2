@@ -1,16 +1,43 @@
-var divs = document.getElementsByClassName('alert');
-for(var i=0; i<divs.length; i++) {
-  divs[i].addEventListener("click", highlightThis);
-  /*
-  divs[i].addEventListener("click", highlightThis, true);
-  divs[i].addEventListener("click", highlightThis, false);*/
-}
 
-function highlightThis(event) {
-    //event.stopPropagation();
-  
-    var backgroundColor = this.style.backgroundColor;
-    this.style.backgroundColor='yellow';
-    alert(this.className);
-    this.style.backgroundColor=backgroundColor;
+
+
+$(document).ready(function() {
+    $(document).foundation();
+    $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true
+    });
+
+
+    $('a').click(smoothScroll);
+    $('.contain-to-grid, .top-bar').css({
+        "background":"#3399FF",
+            "opacity": ".9"
+    });
+
+
+
+});
+
+
+
+
+function smoothScroll(event){
+    event.preventDefault();
+    var target = this.hash;
+    var padding = 0;
+    if (target === "#menu" || target ==="")
+        return;
+    else if (target==="#home")
+        padding = 0;
+    else
+        padding = 50;
+
+    $('html, body').animate({
+        scrollTop: $(this.hash).position().top - padding
+    }, 1000);
 }
