@@ -3,9 +3,10 @@
 
 
 
-
 li, h1, h3, p{
     text-align: center;
+    font-family: $font-primary;
+
 }
 
 .top-bar li{
@@ -22,15 +23,19 @@ li, h1, h3, p{
 }
 
 .top-bar-section li a:not(.button) {
-    background: #297ACC !important;
+    background: #297ACC ;
 }
 
 .top-bar-section li a:not(.button):hover {
-    background: #5CADFF !important;
+    background: #5CADFF ;
 }
 
 .row{
     padding-bottom: 20px;
+
+    ul{
+        width:100%;
+    }
 
 }
 .fullWidth {
@@ -45,6 +50,7 @@ li, h1, h3, p{
 .carousel {
     min-width:100%;
     position: fixed;
+
 
     img{
         min-width:100%;
@@ -95,5 +101,3 @@ li, h1, h3, p{
         }
     }
 }
-
-

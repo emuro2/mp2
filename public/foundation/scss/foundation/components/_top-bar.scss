@@ -238,14 +238,15 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         // Adding the class "menu-icon" will add the 3-line icon people love and adore.
         &.menu-icon {
           top: 50%;
-          margin-top: -16px;
+            height: 100%;
+
 
           a {
             @if $text-direction == rtl {
               text-indent: -58px;
             }
-            height: 34px;
-            line-height: 33px;
+            height: 45px;
+            line-height: 45px;
             padding: 0 $topbar-link-padding+rem-calc(25) 0 $topbar-link-padding;
             color: $topbar-menu-link-color;
             position: relative;

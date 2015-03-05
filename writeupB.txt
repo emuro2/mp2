@@ -1,0 +1,7 @@
+
+
+
+1. I changed the top-bar to be a sticky nav bar that stays at the top of the page. I also changed to default colors of the top-bar, hover elements, and transparency. 
+
+2. I included my smooth scrolling functionality from mp1 because the foundation
+top-bar does not include it by default.  

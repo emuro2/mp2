@@ -1,0 +1,9 @@
+
+
+
+1. Chose to use the top-bar inorder to have the menu drop down when resizing to a smaller screen.
+
+2. Each section that has a grid is resized to different size columns depending on the size of the screen.
+   I chose this because it is a better view for the user and more cohesive.
+
+3. 

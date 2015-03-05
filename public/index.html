@@ -5,17 +5,17 @@
     <title>MP2 Starter</title>
     <script src="./lib/angular/angular.min.js"></script>
     <script src="./js/controllers.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick-theme.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick-theme.css"/>-->
     <link rel="stylesheet" href="./foundation/css/foundation.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="data/images/github-icon.png" type="image/gif" sizes="16x16">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 
 <body>
-    <div class="contain-to-grid sticky">
+    <div class="fixed contain-to-grid">
         <nav class="top-bar" data-topbar role="navigation">
                 <ul class="title-area">
                     <li><a href="#home"><img id ="erik-photo" class="left" src="./data/images/erik.jpg" /></a></li>
@@ -48,14 +48,6 @@
         <!--</div>-->
     <!--</div>-->
 
-    <div class="row fullWidth" id="home">
-        <div class="carousel columns large-12">
-            <div> <img src="data/images/bardeenquad.jpg" /></div>
-            <div><img src="data/images/skyline.jpg" /></div>
-            <div><img  src="data/images/quad.jpg" /></div>
-        </div>
-    </div>
-
     <div class="row" id="portfolio">
         <h1>Portfolio</h1>
         <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
@@ -73,6 +65,23 @@
             </li>
         </ul>
     </div>
+
+    <!--<div class="row fullWidth" id="home">-->
+        <!--<div class="carousel columns large-12">-->
+            <!--<div> <img src="data/images/bardeenquad.jpg" /></div>-->
+            <!--<div><img src="data/images/skyline.jpg" /></div>-->
+            <!--<div><img  src="data/images/quad.jpg" /></div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="row fullWidth" id="home">
+        <div class="carousel columns large-12">
+            <div class="slide"> <img src="data/images/bardeenquad.jpg" /></div>
+            <div class="slide"><img src="data/images/skyline.jpg" /></div>
+            <div class="slide"><img  src="data/images/quad.jpg" /></div>
+        </div>
+    </div>
+
 
     <div id="videoModal" class="reveal-modal large" data-reveal="">
         <h2>This modal has video</h2>
@@ -153,7 +162,8 @@
 
     <script src="./lib/jquery-2.1.3.min/index.js"></script>
     <script src="./foundation/js/foundation.min.js"></script>
-    <script type="text/javascript" src="./lib/slick-carousel/slick/slick.min.js"></script>
+    <!--<script type="text/javascript" src="./lib/slick-carousel/slick/slick.min.js"></script>-->
+    <script src="./lib/bxslider-4/dist/jquery.bxslider.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
 </body>

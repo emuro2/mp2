@@ -3,22 +3,26 @@
 
 $(document).ready(function() {
     $(document).foundation();
-    $('.carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay:true
+    //$('.carousel').slick({
+    //    dots: true,
+    //    infinite: true,
+    //    speed: 500,
+    //    arrows:false,
+    //    slidesToShow: 1,
+    //    slidesToScroll: 1,
+    //    autoplay:true
+    //});
+
+    $('.carousel').bxSlider({
+        maxSlides: 1
     });
 
 
-    $('a').click(smoothScroll);
+    $('.top-bar a').click(smoothScroll);
     $('.contain-to-grid, .top-bar').css({
         "background":"#3399FF",
             "opacity": ".9"
     });
-
 
 
 });

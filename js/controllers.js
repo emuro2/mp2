@@ -1,8 +1,8 @@
-var demoApp = angular.module('demoApp', []);
+var demoApp = angular.module('movieApp', []);
 
-// demoApp.controller('demoController', ['$scope', '$http', function($scope, $http) {
-//   $http.get('public/data/cs498rk.json').success(function(data) {
-//     $scope.courseInfo = data;
-//     $scope.artistOrder = 'name';
-//   });
-// }]);
+movieApp.controller('movieController', ['$scope', '$http', function($scope, $http) {
+   $http.get('public/data/cs498rk.json').success(function(data) {
+     $scope.courseInfo = data;
+     $scope.artistOrder = 'name';
+   });
+}]);
