@@ -23,11 +23,11 @@ li, h1, h3, p{
 }
 
 .top-bar-section li a:not(.button) {
-    background: #297ACC ;
+    background: #297ACC !important;
 }
 
 .top-bar-section li a:not(.button):hover {
-    background: #5CADFF ;
+    background: #5CADFF !important;
 }
 
 .row{
@@ -49,13 +49,36 @@ li, h1, h3, p{
 
 .carousel {
     min-width:100%;
-    position: fixed;
 
 
     img{
         min-width:100%;
-        max-height: 500px;
+        min-height: 500px;
+        max-height:500px;
     }
+
+
+}
+
+
+.first-slide{
+    background-image: url("../data/images/bardeenquad.jpg");
+    min-width:100%;
+    min-height: 500px;
+    max-height:500px;
+}
+
+span{
+    position:absolute;
+//    z-index: 100;
+    top: 45%;
+//    margin: 0 auto;
+    color:#c30;
+    font-size:3em;
+//    text-align:center;
+
+    //    -webkit-text-stroke-width: 1px;
+//    -webkit-text-stroke-color: black;
 }
 
 #about{

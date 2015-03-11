@@ -1,0 +1,11 @@
+
+<div ng-controller="GalleryCtrl" >
+    <input type="search" ng-model="movieTitle.title" placeholder="name...">
+
+    <ol class="small-block-grid-1 medium-block-grid-3 large-block-grid-6">
+        <li  ng-repeat="movie in movies | filter:movieTitle">
+            <h1>{{movie.title}}</h1>
+            <a ng-href="imdb250.html#/detail/:{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg"/></a>
+        </li>
+    </ol>
+</div>

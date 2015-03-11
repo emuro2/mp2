@@ -3,19 +3,18 @@
 
 $(document).ready(function() {
     $(document).foundation();
-    //$('.carousel').slick({
-    //    dots: true,
-    //    infinite: true,
-    //    speed: 500,
-    //    arrows:false,
-    //    slidesToShow: 1,
-    //    slidesToScroll: 1,
-    //    autoplay:true
-    //});
 
-    $('.carousel').bxSlider({
-        maxSlides: 1
+    $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        arrows:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true
     });
+
+
 
 
     $('.top-bar a').click(smoothScroll);

@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="movieApp">
 <head>
     <meta charset="utf-8">
     <title>My Angular App</title>
     <script src="./lib/angular/angular.min.js"></script>
+    <script src="./lib/angular-route/angular-route.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/controllers.js"></script>
     <link rel="stylesheet" href="./foundation/css/foundation.css">
@@ -12,7 +13,11 @@
 </head>
 <body>
 
-<p>Nothing here </p>
+<div class="text-center"><h3>Faklix</h3></div>
+<div class="text-center"><h6> <a href="imdb250.html#/list">Search</a> <a href="imdb250.html#/gallery">Gallery</a> </h6></div>
+
+
+<div ng-view></div>
 
 
 <script src="./lib/jquery-2.1.3.min/index.js"></script>
