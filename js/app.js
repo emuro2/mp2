@@ -1,7 +1,21 @@
+
+
+
 var movieApp = angular.module('movieApp', [
     'ngRoute',
+    'ngAnimate',
     'movieControllers'
 ]);
+
+
+movieApp.run(function($rootScope) {
+    $rootScope.$on('$viewContentLoaded', function () {
+        $(document).foundation();
+
+        $(".top-bar-section ul ")
+
+    });
+});
 
 movieApp.config(['$routeProvider',
     function($routeProvider) {
@@ -10,7 +24,7 @@ movieApp.config(['$routeProvider',
                 templateUrl: 'partials/gallery.html',
                 controller: 'GalleryCtrl'
             }).
-            when('/list', {
+            when('/search', {
                 templateUrl: 'partials/list.html',
                 controller: 'ListCtrl'
             }).
@@ -22,3 +36,4 @@ movieApp.config(['$routeProvider',
                 redirectTo: '/gallery'
             });
     }]);
+

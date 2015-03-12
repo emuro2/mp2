@@ -1,11 +1,21 @@
 
 <div ng-controller="GalleryCtrl" >
-    <input type="search" ng-model="movieTitle.title" placeholder="name...">
+    <!--<input type="search" ng-model="movieTitle.title" placeholder="name...">-->
 
-    <ol class="small-block-grid-1 medium-block-grid-3 large-block-grid-6">
-        <li  ng-repeat="movie in movies | filter:movieTitle">
-            <h1>{{movie.title}}</h1>
-            <a ng-href="imdb250.html#/detail/:{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg"/></a>
-        </li>
-    </ol>
+    <div class="row text-center select-bar" >
+        <div class="columns small-centered small-9 medium-centered medium-6 large-centered large-3">
+            <select  ng-model="genreFilter.genre" ng-options="g.genre as g.genre for g in genres">
+                <option value="">-- choose color --</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <ol class="small-block-grid-1 medium-block-grid-3 large-block-grid-4 block-color" >
+            <li  class="gallery" ng-mouseover="myVar='my-class'" ng-mouseleave="myVar=''" ng-repeat="movie in movies | filter:genreFilter">
+                <h1>{{movie.title}}</h1>
+                <a ng-href="imdb250.html#/detail/:{{movie.rank}}"><img class="base-class" ng-class="myVar"  ng-src="./data/images/{{movie.imdbID}}.jpg"/></a>
+            </li>
+        </ol>
+    </div>
 </div>

@@ -2,9 +2,9 @@
 
 
 <div ng-controller="DetailCtrl" >
-    <div class="row" style="background-color: #c7c7c7;">
+    <div class="row" style="padding-bottom: 10%;   background-color: #c7c7c7;">
         <div class="row" style=" padding-top: 3%; padding-bottom: 2%;">
-            <div class="columns small-centered small-12 medium-centered medium-6 large-centered large-9">
+            <div class="columns small-centered small-12 medium-centered medium-9 large-centered large-9">
                 <div style="display: inline">
                     <ul class="left">
                         <li>
@@ -19,22 +19,23 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="columns  small-6  medium-6 large-centered  large-3">
+        <div class="row ">
+            <div class="columns small-12 medium-6 large-6 text-center" >
                 <img ng-src="./data/images/{{movie.imdbID}}.jpg">
             </div>
-            <div class="columns text-center small-centered small-9  medium-6  large-6">
-                <div>
-                    <h4>Movie Info:</h4>
-                    <ul>
-                        <li><span>{{movie.title}}</span></li>
-                        <li><span>{{movie.rated}}</span></li>
-                        <li><span>{{movie.released}}</span></li>
-                        <li><span>{{movie.runtime}}</span></li>
-                        <li><span>{{movie.genre}}</span></li>
-                        <li><span>{{movie.director}}</span></li>
-                        <li><span>{{movie.language}}</span></li>
-                        <li><span>{{movie.awards}}</span></li>
+            <div class=" columns small-12 medium-6 large-6 text-left">
+                <div ng-mouseover="Bigger='text-bigger'" ng-mouseleave="Bigger=''" >
+                    <ul class="base-text" ng-class="Bigger" >
+                        <li >
+                            <span>Title: {{movie.title.toString()}}</span>
+                        </li>
+                        <li><span>Rated: {{movie.rated.toString()}}</span></li>
+                        <li><span>Release Date: {{movie.released.toString()}}</span></li>
+                        <li><span>Duration: {{movie.runtime.toString()}}</span></li>
+                        <li><span>Genre: {{movie.genre.toString()}}</span></li>
+                        <li><span>Director: {{movie.director.toString()}}</span></li>
+                        <li><span>Language: {{movie.language.toString()}}</span></li>
+                        <li><span>Awards: {{movie.awards.toString()}}</span></li>
                     </ul>
                 </div>
             </div>

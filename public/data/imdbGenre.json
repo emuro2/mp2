@@ -1,0 +1,111 @@
+[
+
+    {
+        "id":"1",
+        "genre":"Action"
+    },
+
+    {
+        "id":"1",
+        "genre":"Adventure"
+    },
+
+    {
+        "id":"1",
+        "genre":"Animation"
+    },
+
+    {
+        "id":"1",
+        "genre":"Biography"
+    },
+
+    {
+        "id":"1",
+        "genre":"Comedy"
+    },
+
+    {
+        "id":"1",
+        "genre":"Crime"
+    },
+
+    {
+        "id":"1",
+        "genre":"Documentary"
+    },
+
+    {
+        "id":"1",
+        "genre":"Drama"
+    },
+
+    {   "id":"1",
+        "genre":"Family"
+    },
+
+    {
+        "id":"1",
+        "genre":"Fantasy"
+    },
+
+    {
+        "id":"1",
+        "genre":"Film-Noir"
+    },
+
+    {
+        "id":"1",
+        "genre":"History"
+    },
+
+    {
+        "id":"1",
+        "genre":"Horror"
+    },
+
+    {
+        "id":"1",
+        "genre":"Music"
+    },
+
+    {
+        "id":"1",
+        "genre":"Musical"
+    },
+
+    {
+        "id":"1",
+        "genre":"Mystery"
+    },
+
+    {
+        "id":"1",
+        "genre":"Romance"
+    },
+
+    {
+        "id":"1",
+        "genre":"Sci-Fi"
+    },
+
+    {
+        "id":"1",
+        "genre":"Sport"
+    },
+
+    {
+        "id":"1",
+        "genre":"Thriller"
+    },
+
+    {   "id":"1",
+        "genre":"War"
+    },
+
+    {
+        "id":"1",
+        "genre":"Western"
+    }
+
+]

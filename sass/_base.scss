@@ -1,6 +1,14 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Roboto');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@font-face {
+    font-family: Pacifico;
+    src: url('/data/fonts/Pacifico.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: Chunkfive;
+    src: url('/data/fonts/Chunkfive.otf') format('opentype');
+}
 
 
 li, h1, h3, p{
@@ -8,6 +16,54 @@ li, h1, h3, p{
     font-family: $font-primary;
 
 }
+
+.landing-page{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0 ;
+
+//    img{
+//        position:relative;
+//        top: -35px ;
+//        width:100%;
+//    }
+
+
+    background-image: url('../data/images/chicago-river.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    color: $white;
+
+    .title{
+        position: absolute;
+        top: 60vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        background-color: rgba(92,173,255,0.6);
+
+
+        
+        h1{
+            font-family: $pacifico-font;
+            color: $white;
+            font-size: 500%;
+        }
+        p{
+            font-family: $font-secondary;
+            color: $white;
+            font-size: 200%;
+        }
+    }
+
+
+}
+
 
 .top-bar li{
     background: #297ACC;
@@ -26,6 +82,8 @@ li, h1, h3, p{
     background: #297ACC !important;
 }
 
+
+
 .top-bar-section li a:not(.button):hover {
     background: #5CADFF !important;
 }
@@ -40,6 +98,7 @@ li, h1, h3, p{
 }
 .fullWidth {
     min-width: 100%;
+
 
     .columns{
         padding-left: 0;
@@ -61,34 +120,42 @@ li, h1, h3, p{
 }
 
 
-.first-slide{
-    background-image: url("../data/images/bardeenquad.jpg");
-    min-width:100%;
-    min-height: 500px;
-    max-height:500px;
+#portfolio{
+    height: 400px;
+
+    h1{
+        margin: 50px auto;
+        font-size: 300%;
+    }
+
+    h3{
+        color: #297ACC;
+        font-size: 200%;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    a.radius.button{
+        background-color: rgba(92,173,255,0);
+    }
+
+    
+
 }
 
-span{
-    position:absolute;
-//    z-index: 100;
-    top: 45%;
-//    margin: 0 auto;
-    color:#c30;
-    font-size:3em;
-//    text-align:center;
-
-    //    -webkit-text-stroke-width: 1px;
-//    -webkit-text-stroke-color: black;
-}
 
 #about{
-    background-image: url('../data/images/almamater.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-
+    background-color: $black;
     color: $white;
+
+    h1{
+        margin: 50px auto;
+        font-size: 300%;
+        color: $white;
+    }
 }
 
 .footer {
@@ -124,3 +191,20 @@ span{
         }
     }
 }
+
+
+
+.skills-class{
+    p{
+        margin: 20px auto;
+        font-size: 100%;
+    }
+
+    h3{
+        color: #297ACC;
+        font-size: 200%;
+    }
+}
+
+
+

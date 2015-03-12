@@ -15,12 +15,20 @@ $(document).ready(function() {
     });
 
 
+    $(window).resize(fixSizing);
 
 
     $('.top-bar a').click(smoothScroll);
     $('.contain-to-grid, .top-bar').css({
         "background":"#3399FF",
             "opacity": ".9"
+    });
+    $('.title h1').mouseover(function() {
+        $(this).animate({"font-size": "700%"}, "slow");
+    });
+
+    $('.title h1').mouseout(function(){
+        $(this).animate({"font-size": "500%"}, "slow");
     });
 
 
@@ -43,4 +51,15 @@ function smoothScroll(event){
     $('html, body').animate({
         scrollTop: $(this.hash).position().top - padding
     }, 1000);
+}
+
+function fixSizing(event){
+    var landSection = $('.landing-page');
+    var landImg = $('.landing-page img');
+    var winHeight = $(window).height();
+
+    if(landImg.height() > winHeight)
+        landSection.css("height",winHeight);
+    else
+        landSection.css("height",landImg.height());
 }

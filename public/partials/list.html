@@ -1,11 +1,31 @@
 <div ng-controller="ListCtrl" >
-    <input type="search" ng-model="movieTitle.title" placeholder="name...">
 
-    <ol class="small-block-grid-1 medium-block-grid-3 large-block-grid-6">
-        <li  ng-repeat="movie in movies | filter:movieTitle">
-            <h1>{{movie.title}}</h1>
-            <a ng-href="imdb250.html#/detail/:{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg"></a>
-        </li>
+    <div class="row text-center select-bar" >
+        <div class="columns small-centered medium-centered large-centered small-9 medium-6 large-3">
+            <input  type="search" ng-model="movieTitle.title" placeholder="Search by Title..." value="">
+            <select ng-model="orderProp">
+                <option value="title">Title</option>
+                <option value="rank">Rank</option>
+            </select>
+            <input type="radio" name="reverse" value="true" ng-click="setReverse(false)"><label>ascending</label>
+            <input type="radio" name="reverse" value="false" ng-click="setReverse(true)"><label>descending</label>
+        </div>
+    </div>
 
-    </ol>
+    <div class="row text-center">
+        <div class="columns small-centered medium-centered large-centered" >
+            <ol class="  small-block-grid-1 medium-block-grid-1 large-block-grid-1 block-height" >
+                <li class="list" ng-mouseover="myVar='my-class'" ng-mouseleave="myVar=''" ng-repeat="movie in movies | filter:movieTitle | orderBy:orderProp:reverse"  >
+                    <a ng-href="imdb250.html#/detail/:{{movie.rank}}">
+                        <div class="columns small-12 medium-6 large-6">
+                            <img class="base-class" ng-class="myVar"  ng-src="./data/images/{{movie.imdbID}}.jpg">
+                        </div>
+                        <div class="columns small-12 medium-6 large-6">
+                            <h1>{{movie.title}}</h1>
+                        </div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
 </div>

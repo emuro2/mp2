@@ -1,5 +1,63 @@
-h1{
-    top:50%;
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Roboto');
+
+
+
+
+h1, h3, p, span{
+//    text-align: center;
+    font-family: $font-primary;
     color: #cf6e0e;
-    font-size: 1em;
+    text-align: center;
+
+}
+
+.block-color{
+    background-color: #c7c7c7;
+}
+.gallery{
+    margin: 5px auto;
+
+}
+
+.list{
+    background-color: #c7c7c7;
+    margin: 5px auto;
+    height: 300px;
+}
+
+.block-height{
+    height: 100px;
+}
+
+.select-bar{
+    background-color: #0b97c4;
+
+    select{
+        margin-top: 10px;
+    }
+
+    input{
+        margin-top: 10px;
+    }
+}
+
+.base-text{
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.base-text.text-bigger{
+    font-family: $font-secondary;
+    font-size: larger;
+}
+
+
+.base-class {
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    height: 250px;
+}
+
+.base-class.my-class {
+    height: 300px;
 }
