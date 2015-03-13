@@ -3,5 +3,6 @@
 
 1. I changed the top-bar to be a sticky nav bar that stays at the top of the page. I also changed to default colors of the top-bar, hover elements, and transparency. 
 
-2. I included my smooth scrolling functionality from mp1 because the foundation
-top-bar does not include it by default.  
+2. I included my smooth scrolling functionality from mp1 because the foundation top-bar does not include it by default. I also removed a lot of transparency I had in mp1 because according to the feedback from the peer reviews, it was too much. So I decided to make a landing page image and a title.
+
+3. I used contrast and minimalistic design for the rest of the website. I made sure that there was enough background/text color contrast to make text more readable. Also, the different fonts and their sizes add for a nice styling on the page. The carousel is more simple now and has autoplay when the page is loaded. 

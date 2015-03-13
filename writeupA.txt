@@ -3,7 +3,6 @@
 
 1. Chose to use the top-bar inorder to have the menu drop down when resizing to a smaller screen.
 
-2. Each section that has a grid is resized to different size columns depending on the size of the screen.
-   I chose this because it is a better view for the user and more cohesive.
+2. Each section that has a grid is resized to different size columns depending on the size of the screen.I chose this because it is a better view for the user and more cohesive. Ex. Resize the grids to accordingly, small screen corresponds to a 1 grid size for complete viewing capability.
 
-3. 
+3. I resize the landing page accordingly because if it is kept as the whole window screen, then the image becomes skewed and I did not want that. Rather, it resizes to a proportional size and everything moves upward so that white space is not misused.
